@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         dmhy-bangumi-current-season
 // @namespace    https://github.com/VegeHime/dmhy-bangumi-current-season
-// @version      0.2.3
+// @version      0.2.5
 // @description  update data of new season bangumi on dmhy
 // @author       Vegehime
 // @match        *://share.dmhy.org/*
@@ -13,7 +13,7 @@
 (function() {
     'use strict';
 
-    function loadJS( url, callback ){
+    function loadJS(url, callback){
         var script = document.createElement('script'),
             fn = callback || function(){};
         script.type = 'text/javascript';
@@ -62,6 +62,8 @@
                 .append(trs[7]);
             $(".jmd tr:even").addClass("even");
             $(".jmd tr:odd").addClass("odd");
+            $(".jmd tr:odd").addClass("odd");
+            $("div[id$='_ad']").removeAttr('align');
         });
     });
 })();
