@@ -21,7 +21,7 @@ function loadJS( url, callback ){
 }
 loadJS('https://cdn.jsdelivr.net/gh/VegeHime/dmhy-bangumi-current-season/data.js', function(){
     let bangumi_data = data['data'];
-    let week_name = ['週日（日）','週一（月）','週二（火）','週三（水）','週四（木）','週五（金）','週六（土）'];
+    let week_name = ['週日（日）','週一（月）','週二（火）','週三（水）','週四（木）','週五（金）','週六（土）', '非周更'];
     let trs = [];
     for (let i = 0; i < week_name.length; i++)
     {
@@ -40,10 +40,11 @@ loadJS('https://cdn.jsdelivr.net/gh/VegeHime/dmhy-bangumi-current-season/data.js
         let day = d.getDay();
         $(".jmd")
             .empty()
-            .append(trs[(d.getDay() + 5) % 7])
-            .append(trs[(d.getDay() + 6) % 7])
-            .append(trs[d.getDay()].addClass('today'))
-            .append(trs[(d.getDay() + 1) % 7]);
+            .append(trs[(day + 5) % 7])
+            .append(trs[(day + 6) % 7])
+            .append(trs[day].addClass('today'))
+            .append(trs[(day + 1) % 7])
+            .append(trs[7]);
         $(".jmd tr:even").addClass("even");
         $(".jmd tr:odd").addClass("odd");
     });
