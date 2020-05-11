@@ -19,7 +19,7 @@ function loadJS( url, callback ){
     script.src = url;
     document.getElementsByTagName('head')[0].appendChild(script);
 }
-loadJS('https://cdn.jsdelivr.net/gh/VegeHime/dmhy-bangumi-current-season/data.js', function(){
+loadJS('https://cdn.jsdelivr.net/gh/VegeHime/dmhy-bangumi-current-season@latest/data.js', function(){
     let bangumi_data = data['data'];
     let week_name = ['週日（日）','週一（月）','週二（火）','週三（水）','週四（木）','週五（金）','週六（土）', '非周更'];
     let trs = [];
