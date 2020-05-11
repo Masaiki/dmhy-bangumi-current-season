@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         dmhy-bangumi-current-season
 // @namespace    https://github.com/VegeHime/dmhy-bangumi-current-season
-// @version      0.2.5
+// @version      0.2.7
 // @description  update data of new season bangumi on dmhy
 // @author       Vegehime
 // @match        *://share.dmhy.org/*
@@ -34,6 +34,7 @@
         script.src = url;
         document.getElementsByTagName('head')[0].appendChild(script);
     }
+    $("div[id$='_ad']").removeAttr('align');
     loadJS('https://cdn.jsdelivr.net/gh/VegeHime/dmhy-bangumi-current-season@master/data.js', function(){
         let bangumi_data = data['data'];
         let week_name = ['週日（日）','週一（月）','週二（火）','週三（水）','週四（木）','週五（金）','週六（土）', '非週更'];
@@ -62,7 +63,6 @@
                 .append(trs[7]);
             $(".jmd tr:even").addClass("even");
             $(".jmd tr:odd").addClass("odd");
-            $("div[id$='_ad']").removeAttr('align');
         });
     });
 })();
