@@ -62,7 +62,6 @@
                 .append(trs[7]);
             $(".jmd tr:even").addClass("even");
             $(".jmd tr:odd").addClass("odd");
-            $(".jmd tr:odd").addClass("odd");
             $("div[id$='_ad']").removeAttr('align');
         });
     });
