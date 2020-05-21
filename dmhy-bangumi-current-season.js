@@ -14,10 +14,11 @@
 
 (function () {
     'use strict';
-    let ShowAllBangumi = localStorage.ShowAllBangumi == "true";
+    let ShowAllBangumi = localStorage.ShowAllBangumi !== "false";
     let day = new Date().getDay();
+    let trs = [];
     function loadJS(url, callback) {
-        var script = document.createElement('script'),
+        let script = document.createElement('script'),
             fn = callback || function () { };
         script.type = 'text/javascript';
         //IE
@@ -38,7 +39,7 @@
         script.src = url;
         document.getElementsByTagName('head')[0].appendChild(script);
     }
-    function bangumiRefresh(trs) {
+    function bangumiRefresh() {
         if (ShowAllBangumi)
             $(trs).appendTo($(".jmd").empty());
         else {
@@ -57,7 +58,6 @@
     loadJS('https://cdn.jsdelivr.net/gh/VegeHime/dmhy-bangumi-current-season@master/data.js', function () {
         let bangumi_data = data['data'];
         let week_name = ['週日（日）', '週一（月）', '週二（火）', '週三（水）', '週四（木）', '週五（金）', '週六（土）', '非週更'];
-        var trs = [];
         for (let i = 0; i < bangumi_data.length; i++) {
             let td = $('<td></td>');
             for (let j = 0; j < bangumi_data[i].length; j++) {
@@ -73,11 +73,11 @@
         switchButton.click(function () {
             ShowAllBangumi = !ShowAllBangumi;
             localStorage.setItem('ShowAllBangumi', ShowAllBangumi);
-            bangumiRefresh(trs);
+            bangumiRefresh();
         });
         $(".jmd").ready(function () {
             switchButton.prependTo($('span.fr'));
-            bangumiRefresh(trs);
+            bangumiRefresh();
         });
     });
 })();
