@@ -29,7 +29,7 @@ let bangumi_data = [
         ["啄木鳥偵探社", "啄木鳥"],
         ["大肚皮的快樂生活"],
         ["超普通都市柏傳說R"],
-        ["高校之神", "高之神|godofhigh"]
+        ["高校之神", "THE GOD OF HIGH SCHOOL"]
     ],
     [
         ["魔法水果籃", "水果籃子|魔法水果籃|Fruits-Basket"],
