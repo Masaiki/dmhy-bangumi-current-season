@@ -97,7 +97,7 @@
     };
     let select = createElementWithAttr('select', {'style':'marginRight:2px; background-color:#247; color:#FFF'});
     select.onchange = (e)=>{
-        localStorage.DataURL = (history_list.urls)[select.selectedIndex];
+        localStorage.DataURL = history_list.urls[select.selectedIndex];
         location.reload();
     };
     document.querySelector('.nav_title').style.paddingBottom = '5px';
@@ -106,10 +106,10 @@
     block.insertBefore(select, block.firstChild);
     loadJS('https://cdn.jsdelivr.net/gh/VegeHime/dmhy-bangumi-current-season@master/history-list.js', function () {
         for (let i=0; i < history_list.values.length; i++) {
-            let option = createElementWithAttr('option',{'value':(history_list.values)[i]}, (history_list.names)[i]);
+            let option = createElementWithAttr('option',{'value':history_list.values[i]}, history_list.names[i]);
             select.add(option);
         }
-        let selectedValue = history_list.urls.indexOf(DataURL);
-        if (selectedValue !== -1) select.value = selectedValue;
+        let selectedIndex = history_list.urls.indexOf(DataURL);
+        if (selectedIndex !== -1) select.value = history_list.values[selectedIndex];
     });
 })();
