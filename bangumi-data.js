@@ -54,7 +54,7 @@ let bangumi_data = [
         ["科學超電磁砲T", "炮T|砲T"],
         ["非槍人生 NO GUNS LIFE 第2期", "NO GUNS LIFE"],
         ["果然我的青春戀愛喜劇搞錯了。完", "我的青春"],
-        ["弩級戰隊H×EROS", "弩級戰隊"],
+        ["弩級戰隊H×EROS", "弩級"],
         ["Battle Spirits 赫盟的Galette", "Battle Spirits"]
     ],
     [
