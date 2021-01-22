@@ -36,7 +36,7 @@ let bangumi_data = [
         ["Eternity 深夜的濡戀頻道", "濡戀"],
         ["滿溢的水果塔", "滿溢的"],
         ["A3! 第二季", "A3"],
-        ["進撃的巨人The Final Season", "進撃的巨人"]
+        ["進擊的巨人The Final Season", "進擊的巨人"]
     ],
     [
         ["闇影詩章", "Shadowverse|影之詩|闇影詩章"],

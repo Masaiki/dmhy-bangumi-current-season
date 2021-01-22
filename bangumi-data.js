@@ -34,7 +34,7 @@ let bangumi_data = [
         ["秘密結社 鷹之爪 ～Golden・Spell～", "秘密結社"],
         ["GIRL學。～聖GIRLS²學園～", "GIRL學"],
         ["突然降臨的埃及神", "埃及神"],
-        ["進撃的巨人The Final Season", "進撃的巨人"],
+        ["進擊的巨人The Final Season", "進擊的巨人"],
         ["俗女純愛大作戰", "俗女純愛大作戰|地味变"],
         ["EX-ARM"],
         ["悠悠哉哉少女日和 第三季", "悠哉|Biyori"],
