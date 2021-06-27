@@ -61,6 +61,7 @@ let bangumi_data = [
         ["席斯坦-The Roman Fighter-"],
         ["義呆利 World☆Stars", "world stars"],
         ["通靈王", "SHAMAN KING"],
+        ["SD鋼彈世界群英集", "SD 高达|鋼彈"],
         ["哥吉拉：奇異點", "Godzilla"],
         ["Fairy 蘭丸～讓我來幫助你的心～", "Fairy 蘭丸"],
         ["佐賀偶像是傳奇 捲土重來", "佐賀偶像是傳奇"]
@@ -80,7 +81,7 @@ let bangumi_data = [
         ["美麗新世界 The Animation", "美妙世界|美麗新世界"],
         ["結城友奈是勇者 啾嚕！", "結城友奈是勇者"],
         ["BLUE REFLECTION : 澪", "BLUE REFLECTION RAY"],
-        ["真白之音"],
+        ["真白之音", "白之音"],
         ["卡片戰鬥!! 先導者 overDress", "overDress"],
         ["勇者鬥惡龍 達伊的大冒險", "勇者鬥惡龍"],
         ["我的英雄學院 第五季", "我的英雄學院"],
