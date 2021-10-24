@@ -63,7 +63,8 @@ let bangumi_data = [
         ["SD鋼彈世界群英集", "SD 高达|鋼彈"],
         ["白沙的Aquatope", "白 Aquatope"],
         ["Muv-Luv Alternative"],
-        ["迷宫标记者", "SAKUGAN"]
+        ["迷宫标记者", "SAKUGAN"],
+        ['白金終局', '金終局']
     ],
     [
         ["妖怪手錶 ♪", "妖怪手錶|妖怪手表"],
