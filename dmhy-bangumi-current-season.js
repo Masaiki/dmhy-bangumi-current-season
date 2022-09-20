@@ -81,7 +81,7 @@
         });
     }
     document.querySelector("div[id$='_ad']").removeAttribute('align');
-    let DataURL = localStorage.DataURL || 'https://cdn.jsdelivr.net/gh/Masaiki/dmhy-bangumi-current-season@master/bangumi-data.js';
+    let DataURL = localStorage.DataURL || 'https://github.com/Theergold/dmhy-bangumi-current-season/raw/master/bangumi-data.js';
     loadJS(DataURL, function () {
         data2doms();
         bangumiRefresh();
@@ -104,7 +104,7 @@
     let block = document.querySelector('span.fr');
     block.insertBefore(switchButton, block.firstChild);
     block.insertBefore(select, block.firstChild);
-    loadJS('https://cdn.jsdelivr.net/gh/Masaiki/dmhy-bangumi-current-season@master/history-list.js', function () {
+    loadJS('https://github.com/Theergold/dmhy-bangumi-current-season/raw/master/history-list.js', function () {
         for (let i = 0; i < history_list.values.length; i++) {
             let option = createElementWithAttr('option', { 'value': history_list.values[i] }, history_list.names[i]);
             select.add(option);
