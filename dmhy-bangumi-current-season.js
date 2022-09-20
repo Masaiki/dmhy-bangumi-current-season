@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         dmhy-bangumi-current-season
-// @name:zh-CN   动漫花园新番索引更新脚本
-// @namespace    https://github.com/Masaiki/dmhy-bangumi-current-season
-// @version      0.4.0
+// @name:zh-CN   动漫花园新番索引更新脚本(更新数据)
+// @namespace    https://github.com/Theergold/dmhy-bangumi-current-season
+// @version      0.4.0(202207)
 // @description  update data of new season bangumi on dmhy
 // @description:zh-CN 更新动漫花园新番列表及搜索关键词
 // @author       Masaiki
