@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         dmhy-bangumi-current-season
 // @name:zh-CN   动漫花园新番索引更新脚本
-// @namespace    https://github.com/Masaiki/dmhy-bangumi-current-season
-// @version      0.4.2
+// @namespace    https://github.com/VegeHime/dmhy-bangumi-current-season
+// @version      0.4.3
 // @description  update data of new season bangumi on dmhy
 // @description:zh-CN 更新动漫花园新番列表及搜索关键词
 // @author       Masaiki
@@ -81,7 +81,7 @@
         });
     }
     document.querySelector("div[id$='_ad']").removeAttribute('align');
-    let DataURL = localStorage.DataURL || 'https://aliyun-wb-bai621pis7-klt02wd7.oss-cn-shanghai.aliyuncs.com/bangumi-data.js';
+    let DataURL = localStorage.DataURL || 'https://aliyun-wb-bai621pis7-klt02wd7.oss-cn-shanghai.aliyuncs.com/dmhy-bangumi-current-season-master/bangumi-data.js';
     loadJS(DataURL, function () {
         data2doms();
         bangumiRefresh();
@@ -104,7 +104,7 @@
     let block = document.querySelector('span.fr');
     block.insertBefore(switchButton, block.firstChild);
     block.insertBefore(select, block.firstChild);
-    loadJS('https://aliyun-wb-bai621pis7-klt02wd7.oss-cn-shanghai.aliyuncs.com/history-list.js', function () {
+    loadJS('https://aliyun-wb-bai621pis7-klt02wd7.oss-cn-shanghai.aliyuncs.com/dmhy-bangumi-current-season-master/history-list.js', function () {
         for (let i = 0; i < history_list.values.length; i++) {
             let option = createElementWithAttr('option', { 'value': history_list.values[i] }, history_list.names[i]);
             select.add(option);
